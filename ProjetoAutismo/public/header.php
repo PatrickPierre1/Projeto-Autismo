@@ -16,11 +16,12 @@
         <div class="container">
             <div class="header d-flex justify-content-around align-items-center">
                 <div class="logo">
-                    <a href="index.php"><img src="assets/media/logo.png" alt=""></a>
+                    <a href="index.php"><img draggable="false" src="assets/media/logo.png" alt=""></a>
                 </div>
                 <nav class="d-flex align-items-center justify-content-center">
                     <div class="nav-bar d-flex align-items-center justify-content-center">
                         <ul class="d-flex align-items-center justify-content-between">
+                            <li><a class="text-decoration-none sobre" href="./index.php">Início</a></li>
                             <li><a class="text-decoration-none sobre" href="./sobre.php">Sobre nós</a></li>
                             <li><a class="text-decoration-none contact" href="./contato.php">Contato</a></li>
                         </ul>
@@ -29,7 +30,7 @@
                 <div class="sociais">
                     <div class="sociais-box">
                         <a target="_blank" href="https://whatsapp.com"><img src="assets/media/logo-whatsapp.png" alt=""></a>
-                        <a target="_blank" href="htttps://instagram.com"><img src="assets/media/logo-instagram.png" alt=""></a>
+                        <a target="_blank" href="https://instagram.com"><img src="assets/media/logo-instagram.png" alt=""></a>
                     </div>
                 </div>
             </div>

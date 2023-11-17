@@ -1,8 +1,9 @@
+    <aside onclick="scroll()">&uarr;</aside>
     <footer class="p-4">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="assets/media/logo.png" alt="">
+                    <img draggable="false" src="assets/media/logo.png" alt="">
                 </div>
                 <div class="col">
                     <div class="text-center">
@@ -16,5 +17,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
     </body>
     </html>

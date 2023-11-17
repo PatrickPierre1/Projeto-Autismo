@@ -57,23 +57,29 @@ ul li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
     color: #FFF;
-    -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .presencial,
 .domiciliar,
 .orientacao,
 .acompanhamento{
-  background-color: rgba(175,29,85, .8);
+  background-color: #c16081;
+  background-image: linear-gradient(359deg, #c16081 0%, #af1d55 100%);
   max-width: 500px!important;
   margin: 30px;
   border-radius: 10px;
   text-align: justify;
   height: 400px;
+  -webkit-animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  
 }
+
 .title-atendimento {
-  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 .banner-crianca {
   background-image: url("../media/banner-section.jpg");
@@ -96,8 +102,8 @@ ul li a {
 }
 
 .popup {
-	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: text-pop-up-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate backwards;
+	        animation: text-pop-up-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate backwards;
 }
 footer {
   background-color: #ccc;
@@ -109,21 +115,29 @@ footer img {
   height: 100vh;
 }
 
-
-.aboutus {
-  text-align: center;
+aside {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(175,29,85, .8);
+  border-radius: 10px;
+  color: #FFF;
 }
-
-
-
-
-
 .form-container {
   height: 400px;
   width: 400px;
   background: linear-gradient(#fff, #fff) padding-box,
               linear-gradient(145deg, transparent 35%,#af1d55, #40c9ff) border-box;
-  border: 2px solid transparent;
+  border: 5px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
   font-family: inherit;
@@ -135,6 +149,7 @@ footer img {
   border-radius: 16px;
   background-size: 200% 100%;
   animation: gradient 5s ease infinite;
+  overflow-y: hidden;
 }
 
 @keyframes gradient {
@@ -173,6 +188,7 @@ footer img {
   color: #717171;
   font-weight: 600;
   font-size: 12px;
+  padding-bottom: 7px;
 }
 
 .form-container .form-group input {
@@ -234,6 +250,55 @@ footer img {
   background-color: #af1d55;
   border-color: #af1d55;
 }
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes text-pop-up-top {
   0% {
     -webkit-transform: translateY(0);
@@ -243,11 +308,11 @@ footer img {
     text-shadow: none;
   }
   100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     -webkit-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 30px 30px rgba(0, 0, 0, 0.2);
   }
 }
 @keyframes text-pop-up-top {
@@ -259,11 +324,11 @@ footer img {
     text-shadow: none;
   }
   100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     -webkit-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 30px 30px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -299,3 +364,38 @@ footer img {
       opacity: 1;
     }
   }
+
+
+@media (max-width: 576px) {
+  .logo a img {
+    width: 100px;
+  }
+  .apresentacao {
+    text-shadow: 3px 3px #000;
+    font-weight: bold;
+    font-size: 1.7em!important;
+  }
+  .presencial,
+  .domiciliar,
+  .orientacao,
+  .acompanhamento{
+    background-color: #c16081;
+    background-image: linear-gradient(359deg, #c16081 0%, #af1d55 100%);
+    max-width: 400px!important;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: justify;
+    height: 400px;
+  }
+  .content {
+    height: 200px;
+    width: 150px;
+  }
+  .section-atendimento .row {
+    display: flex!important;
+    justify-content: center!important;
+  }
+  .aboutus {
+    font-size: 1rem!important;
+  }
+}

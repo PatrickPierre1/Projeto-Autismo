@@ -17,7 +17,7 @@
                 <br>nosso atendimento
             </h1>
             <div class="row">
-                <div class="col presencial">
+                <div class="col-lg-6 col-md-6 col-sm-12 presencial">
                     <div class="p-3">
                         <h2 style="color:white" class="d-flex justify-content-center py-3">Presencial</h2><br>
                         <span style="color:white">Nossos especialistas atuam com diferentes tipos de intervenções
@@ -31,7 +31,7 @@
                             atípicas.</span>
                     </div>
                 </div>
-                <div class="col domiciliar">
+                <div class="col-lg-6 col-md-6 col-sm-12 domiciliar">
                     <div class="p-3">
                         <h2 style="color:white" class="d-flex justify-content-center py-3">Domiciliar</h2><br>
                         <span style="color:white">Toda a intervenção pode ser realizada na residência da criança, com
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col orientacao">
+                <div class="col-lg-6 col-md-6 col-sm-12 orientacao">
                     <div class="p-3">
                         <h2 style="color:white" class="d-flex justify-content-center py-3">Orientação Parental</h2><br>
                         <span style="color:white">A família tem um papel fundamental nos resultados de melhora da
@@ -60,7 +60,7 @@
                     </div>
 
                 </div>
-                <div class="col acompanhamento">
+                <div class="col-lg-6 col-md-6 col-sm-12 acompanhamento">
                     <div class="p-3">
                         <h2 style="color:white" class="text-center d-flex justify-content-center py-3">Acompanhamento
                             Terapêutico</h2><br>
@@ -88,13 +88,13 @@
             <div class="row">
                 <div class="col">
                     <div class="content">
-                        <span style="color: #80163e;" class="fs-1 fw-bold popup">+700</span><br>
+                        <span style="color: #80163e;" class="fs-1 fw-bold text1 popup"></span><br>
                         <span class="fs-5">Crianças atendidas</span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="content">
-                        <span style="color: #80163e;" class="fs-1 fw-bold popup">+600</span><br>
+                        <span style="color: #80163e;" class="fs-1 fw-bold text2 popup"></span><br>
                         <span class="fs-5">profissionais atuando com o Instituto</span>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
             <div class="row">
                 <div class="col">
                     <div class="content">
-                        <span style="color: #80163e;" class="fs-1 fw-bold popup">+3000m²</span><br>
+                        <span style="color: #80163e;" class="fs-1 fw-bold text3 popup"></span><br>
                         <span class="fs-5">de espaço físico</span>
                     </div>
                 </div>

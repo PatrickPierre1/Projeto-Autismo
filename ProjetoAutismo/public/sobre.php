@@ -7,12 +7,12 @@
     $consulta->execute();
     $sobres = $consulta->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<main>
+<main class="bg-dark">
     <section class="container">
-        <div>
+        <div style="text-align: center;">
             <h1 class="d-flex justify-content-center">Nossa história</h1>
-            <span class="aboutus">
-                Instituto Autista De Umuarama: Desenvolvendo Pontes para o Futuro
+            <span style="color: #FFF; font-size: 1.2rem" class="aboutus">
+                Desenvolvendo Pontes para o Futuro
 
                 No coração de nossa comunidade, floresce uma instituição dedicada a desvendar os mistérios do espectro
                 autista, promovendo compreensão, aceitação e, acima de tudo, aprendizado. Instituto Autista De Umuarama
@@ -61,14 +61,8 @@
             shuffle($sobres);
             foreach($sobres as $sobre) {
         ?>
-        <div class="col-4">
-            <img src="./assets/media/<?=$sobre["imagem"]?>" alt="<?=$sobre["nome"]?>">
-            <p class="text-center">
-                <strong>
-                    <?=$sobre["nome"]?>
-                </strong>
-                <br>
-            </p>
+        <div class="col-lg-4 col-sm-6">
+            <img draggable="false" style="margin-bottom: 10px;" src="./assets/media/<?=$sobre["imagem"]?>" alt="">
         </div>
         <?php 
             }
